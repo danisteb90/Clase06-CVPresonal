@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap');
+
+:root {
+    --shadow-color: 249deg 37% 23%;
+    --shadow-color2: 26deg 64% 45%;
+    --shadow-elevation-low:
+        1px 1px 10px hsl(var(--shadow-color) / 0.34),
+        1.7px 1.7px 5.7px -1.2px hsl(var(--shadow-color) / 0.34),
+        4px 4px 6.4px -2.5px hsl(var(--shadow-color) / 0.34);
+        --shadow-elevation-low2:
+        1px 1px 10px hsl(var(--shadow-color2) / 0.34),
+        1.7px 1.7px 5.7px -1.2px hsl(var(--shadow-color) / 0.34),
+        4px 4px 6.4px -2.5px hsl(var(--shadow-color) / 0.34);
+    --shadow-elevation-medium:
+        1px 1px 1.6px hsl(var(--shadow-color) / 0.36),
+        3.3px 3.3px 5.3px -0.8px hsl(var(--shadow-color) / 0.36),
+        8.2px 8.2px 13px -1.7px hsl(var(--shadow-color) / 0.36),
+        20px 20px 31.8px -2.5px hsl(var(--shadow-color) / 0.36);
+}
+
+    body {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    main {
+        width: 650px;
+        height: 1060px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        background-color: #FFFEE3;
+    }
+
+    .pag2 {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url(./assets/back1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: #FBE762;
+    }
+
+    .pag2 a {
+        width: 10%;
+        text-align: center;
+    }
+
+    .video {
+        width: 100%;
+        height: 400px;
+        position: absolute;
+        z-index: 0;
+        top: -100px;
+        left: 0;
+    }
+
+    .img {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+        top: -5px;
+    }
+
+    img {
+        width: 200px;
+        height: 265px;
+    }
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 30px;
+        margin-top: -30px;
+        margin-bottom: 15px;
+        color: #211336;
+    }
+
+    .title h1 {
+        margin-bottom: 0;
+    }
+
+    .title h2 {
+        margin-top: -30px;
+        margin: 0;
+    }
+
+    a {
+        background-color: #514762;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 20px;
+        color: #FBE762;
+        font-weight: 500;
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+    a:hover {
+        background-color: #FBE762;
+        color: #211336;
+        cursor: pointer;
+    }
+
+    .main-section {
+        display: flex;
+    }
+
+    .left-side {
+        flex: 2;
+    }
+
+    .contact {
+        background-color: #FBE762;
+        box-shadow: var(--shadow-elevation-low);
+        border-radius: 10px;
+        position: relative;
+        height: 120px;
+        width: 260px;
+        margin-left: 20px;
+    }
+
+    .contact hr {
+        position: absolute;
+        top: 9px;
+        left: 85px;
+        border: 2px solid #211336;
+        width: 60%;
+    }
+
+    .contact h1 {
+        font-size: 16px;
+        font-weight: 500;
+        margin: 0;
+        padding: 5px 10px;
+    }
+
+    .contact div {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        padding-left: 10px;
+        line-height: 5px;
+        font-size: 10px;
+    }
+
+    .skills {
+        border-radius: 10px;
+        box-shadow: var(--shadow-elevation-low2);
+        width: 309px;
+        height: 350px;
+        background-color: #514762;
+        color: #FBE762;
+        margin-top: 20px;
+        margin-left: 20px;
+        padding: 10px;
+        position: relative;
+    }
+
+    .skills hr {
+        position: absolute;
+        top: 31px;
+        left: 70px;
+        border: 2px solid #FBE762;
+        width: 70%;
+    }
+
+    .skills h1 {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .skills div p {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .right-side {
+        flex: 2;
+        margin: 0;
+        padding: 0px 40px;
+    }
+
+    .right-title {
+        position: relative;
+    }
+
+    .right-title hr {
+        position: absolute;
+        border: 2px solid #50478A;
+        width: 90%;
+        top: 20px;
+        left: 0;
+    }
+
+    .right-title h1 {
+        font-size: 18px;
+        font-weight: 500;
+        color: #50478A;
+        margin: 0;
+    }
+
+    .right-title p {
+        font-size: 12px;
+        
+    }
+
+    .right-title div {
+        display: flex;
+        margin-top: 20px;
+        gap: 35px;
+    }
+
+    .right-title div h3 {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .right-title div h2 {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .right-title div p {
+        font-size: 10px;
+    }
+
+    .barra {
+        position: relative;
+        border: 3px solid #FBE762;
+        border-radius: 20px;
+        overflow: hidden;
+        display: flex;
+    }
+
+    .ps {
+        height: 24px;
+        width: 75%;
+        background-color: #FBE762;
+    }
+
+    .barra p {
+        position: absolute;
+        right: 8px;
+        top: -9px;
+        font-weight: bold;
+    }
+
+    .html {
+        height: 24px;
+        width: 85%;
+        background-color: #FBE762;
+    }
+
+    .css {
+        height: 24px;
+        width: 65%;
+        background-color: #FBE762;
+    }
+
+    .react {
+        height: 24px;
+        width: 40%;
+        background-color: #FBE762;
+    }
+
+    footer {
+        width: 100%;
+        font-size: 10px;
+        background-color: #211336;
+        color: #FBE762;
+        text-align: center;
+    }
+
+    footer div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 150px;
+    }
+
+    .footer-btn {
+        background-color: transparent;
+        width: 50px;
+        border-radius: 0;
+        cursor: pointer;
+    }
+
+    .footer-btn i {
+        font-size: 25px;
+    }
